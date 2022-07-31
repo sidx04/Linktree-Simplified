@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ducky's Links</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preload" href="./img/bg.png" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', ()=>{
+        
+        VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,color1: 0x482929,
+        color2: 0x9eb2c8,
+        birdSize: 1.50,
+        wingSpan: 34.00,
+        speedLimit: 12.00,
+        alignment: 59.00,
+        cohesion: 1.00,
+        quantity: 4.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundAlpha: 0.00,
+        })
+
+        setTimeout(()=>{
+            const main=document.querySelector('main')
+            main.style.opacity=1
+            main.style.filter='blur(0px)'
+        }, 1000)
+
+    })
+    </script>
+</head>
+
+<body>
+    <div id="vanta">
+    <video autoplay muted loop playsinline>
+        <source src="./img/plant.mp4" type="video/mp4; codecs=hvc1">
+    </video>
+    <main>
+        <header>
+            <img src="/img/pfp.png"/>
+            <h1>@duckyapocalypse</h1>
+        </header>
+        <ul>
+            <li>
+                <a href="https://twitter.com/duckyfied">
+                    <img src="/img/icons8-twitter.svg" alt="twitter" width="20px">
+                    Twitter
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com/duckyapocalypse"> 
+                    <img src="/img/icons8-instagram.svg" alt="twitter" width="20px">
+                    Instagram</a></li>
+            <li> <a href="https://discord.gg/dQ79SZAC"> 
+                <img src="/img/icons8-discord.svg" alt="twitter" width="20px">
+                Discord</a>
+            </li>
+        </ul>
+    </main>
+    
+</body>
+</html>
